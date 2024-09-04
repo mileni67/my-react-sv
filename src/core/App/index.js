@@ -4,14 +4,14 @@ import { GlobalStyle } from "./GlobalStyle";
 import { useSelector } from "react-redux";
 import { selectIsDarkTheme } from "../../common/themeSlice";
 import { themeDark, themeLight } from "./theme";
-import { ThemeSwitch } from "../../common/ThemeSwitch";
+import { PersonalHomePage} from "../../features/personalHomePage";
 
 export const App = () => {
   const isDarkTheme = useSelector(selectIsDarkTheme);
 
   return (
     <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
-      <ThemeSwitch />
+      <PersonalHomePage/>
       <Normalize />
       <GlobalStyle />
     </ThemeProvider>
