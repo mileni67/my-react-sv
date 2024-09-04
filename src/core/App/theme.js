@@ -17,6 +17,9 @@ const common = {
 export const themeLight = {
   ...common,
   colors: {
+    primary: {
+      textPrimary: colorNames.mineShaft,
+    },
     site: {
       background: colorNames.Moonlight,
     },
