@@ -11,9 +11,9 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={isDarkTheme ? themeDark : themeLight}>
-      <PersonalHomePage/>
       <Normalize />
       <GlobalStyle />
+      <PersonalHomePage/>
     </ThemeProvider>
   );
 };
