@@ -1,11 +1,11 @@
 import { ThemeSwitch } from "../../common/ThemeSwitch";
-import { MainInforamation} from "./MainInformation";
+import { MainInforamation } from "./MainInformation";
 import { Skills } from "./Skills";
 import { Container, Icon } from "./styled";
 import toolsIcon from "./toolsIcon.svg";
 import rookIcon from "./rookIcon.svg";
 import { nextSkills, skills } from "./skillData";
-
+import { Portfolio } from "./Portfolio";
 
 export const PersonalHomePage = () => (
   <Container>
@@ -29,6 +29,8 @@ export const PersonalHomePage = () => (
         }
         skills={nextSkills}
       />
+
+      <Portfolio />
     </main>
   </Container>
 );
