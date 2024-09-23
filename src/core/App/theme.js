@@ -6,6 +6,9 @@ export const colorNames = {
   doveGray: "#6D6D6D",
   ultramarineBlue: "#0366D6",
   frostedGray: "#D1D5DA4D",
+  ironTransparent: "rgba(209, 213, 218, 0.3)",
+  anakiwa: "#8CC2FF",
+  hazyGray: "#414141",
 };
 
 const common = {
@@ -22,17 +25,26 @@ const common = {
 export const themeLight = {
   ...common,
   colors: {
-    primary: {
-      textPrimary: colorNames.mineShaft,
-    },
+    primary: colorNames.ultramarineBlue,
+    textPrimary: colorNames.mineShaft,
+
     site: {
       background: colorNames.Moonlight,
+    },
+    buttonLink: {
+      text: colorNames.white,
+      border: colorNames.ironTransparent,
+      shadow: colorNames.anakiwa,
     },
     themeSwitch: {
       background: colorNames.mercury,
       icon: colorNames.white,
     },
     boxBackground: colorNames.white,
+    tile: {
+      border: colorNames.hazyGray,
+      header: colorNames.ultramarineBlue,
+    },
   },
 };
 
