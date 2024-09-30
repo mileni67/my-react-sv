@@ -6,6 +6,7 @@ import toolsIcon from "./toolsIcon.svg";
 import rookIcon from "./rookIcon.svg";
 import { nextSkills, skills } from "./skillData";
 import { Portfolio } from "./Portfolio";
+import { Footer } from "./Footer";
 
 export const PersonalHomePage = () => (
   <Container>
@@ -32,5 +33,6 @@ export const PersonalHomePage = () => (
 
       <Portfolio />
     </main>
+    <Footer />
   </Container>
 );
