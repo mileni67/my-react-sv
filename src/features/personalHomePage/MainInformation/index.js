@@ -1,5 +1,14 @@
+import { email } from "../email";
 import OleksandrVykhorProfile from "./profile.jpg";
-import { Avatar, Name, Text, ThisIs, Wrapper } from "./styled";
+import {
+  Avatar,
+  ButtonIcon,
+  Name,
+  StyledButtonLink,
+  Text,
+  ThisIs,
+  Wrapper,
+} from "./styled";
 
 export const MainInforamation = () => (
   <Wrapper>
@@ -7,9 +16,13 @@ export const MainInforamation = () => (
     <div>
       <ThisIs>This is</ThisIs>
       <Name>Oleksandr Vykhor</Name>
+      <StyledButtonLink href={`mailto:${email}`} title={email}>
+        <ButtonIcon />
+        Hire me
+      </StyledButtonLink>
       <Text>
-        I’m a passionate Frontend Developer in love with React, currently
-        looking for new job opportunities.
+        👨🏻‍💻 Passionate Frontend Developer | React Enthusiast | Open to New
+        Adventures 🚀
       </Text>
     </div>
   </Wrapper>
