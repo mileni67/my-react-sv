@@ -9,5 +9,12 @@ export const GlobalStyle = createGlobalStyle`
 }
 body {
     font-family: 'Inter' sans-serif;
+    transition: background 0.3s;
+    background-color: ${({ theme }) => theme.colors.site.background};
+    color: ${({ theme }) => theme.colors.site.text};
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    word-break: break-word;
+    padding-bottom: 108px;
 }
 `;
