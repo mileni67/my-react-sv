@@ -5,7 +5,7 @@ export const ButtonLink = styled.a`
   padding: 12px 16px;
   font-size: 20px;
   font-weight: 600;
-  border: solid ${({ theme }) => theme.colors.ButtonLink.border};
+  border: solid ${({ theme }) => theme.colors.buttonLink.border};
   color: ${({ theme }) => theme.colors.buttonLink.text};
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
   background: ${({ theme }) => theme.colors.primary};
