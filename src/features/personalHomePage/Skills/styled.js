@@ -2,8 +2,6 @@ import styled from "styled-components";
 import { ReactComponent as BulletImage } from "./bullet.svg";
 import { SubHeader } from "../SubHeader";
 
-
-
 export const Section = styled.section`
   background-color: ${({ theme }) => theme.colors.boxBackground};
   padding: 32px;
@@ -27,12 +25,12 @@ export const Item = styled.li`
 `;
 
 export const Bullet = styled(BulletImage)`
-  color: ${({ theme }) => theme.colors.ultramarineBlue};
+  color: ${({ theme }) => theme.colors.primary};
   margin-right: 16px;
   height: auto;
 `;
 
 export const StyledHeader = styled(SubHeader)`
   padding-bottom: 13px;
-  border-bottom: solid 1px ${({ theme }) => theme.colors.frostedGray};
+  border-bottom: solid 1px ${({ theme }) => theme.colors.headerLine};
 `;

@@ -5,6 +5,7 @@ export const Wrapper = styled.footer`
 `;
 
 export const LetsTalk = styled.h2`
+  color: ${({ theme }) => theme.colors.headerPrefix};
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: initial;
@@ -20,6 +21,7 @@ export const EmailWrapper = styled.div`
 `;
 
 export const EmailLink = styled.a`
+  color: ${({ theme }) => theme.colors.textPrimary};
   font-weight: 900;
   font-size: 32px;
   text-decoration: none;

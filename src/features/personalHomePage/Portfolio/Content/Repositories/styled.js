@@ -12,7 +12,7 @@ export const List = styled.ul`
 
 export const Tile = styled.li`
   padding: 56px;
-  background-color: ${({ theme }) => theme.colors.boxBackround};
+  background-color: ${({ theme }) => theme.colors.boxBackground};
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
   transition: border-color 0.3s;
   box-shadow: ${({ theme }) => theme.colors.boxShadow};
