@@ -8,7 +8,8 @@ export const colorNames = {
   frostedGray: "#D1D5DA4D",
   ironTransparent: "rgba(209, 213, 218, 0.3)",
   anakiwa: "#8CC2FF",
-  hazyGray: "#414141",
+  hazyGray: "#F2F3F4",
+  slateGray: "#6E7E91",
 };
 
 const common = {
@@ -30,6 +31,7 @@ export const themeLight = {
 
     site: {
       background: colorNames.Moonlight,
+      text: colorNames.slateGray,
     },
     buttonLink: {
       text: colorNames.white,
@@ -45,6 +47,8 @@ export const themeLight = {
       border: colorNames.hazyGray,
       header: colorNames.ultramarineBlue,
     },
+    headerPrefix: colorNames.slateGray,
+    headerLine: colorNames.frostedGray,
   },
 };
 
@@ -59,5 +63,6 @@ export const themeDark = {
       background: colorNames.doveGray,
       icon: colorNames.mineShaft,
     },
+    headerPrefix: colorNames.slateGray,
   },
 };
