@@ -9,16 +9,17 @@ const rotate = keyframes`
 
 export const Wrapper = styled.div`
   text-align: center;
-  margin-top: 88px;
   font-size: 20px;
   color: ${({ theme }) => theme.colors.textPrimary};
   display: grid;
-  justify-content: center;
+  place-items: center;
+  min-height: 100vh;
 `;
 
 export const StyledSpinner = styled(Spinner)`
-  margin-top: 48px;
   animation: ${rotate} 1s linear infinite;
   color: ${({ theme }) => theme.colors.primary};
-  height: auto;
+  width: 160px;
+  height: 160px;
+  margin-top: 48px;
 `;
