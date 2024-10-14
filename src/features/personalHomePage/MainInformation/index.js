@@ -21,8 +21,10 @@ export const MainInforamation = () => (
         Hire me
       </StyledButtonLink>
       <Text>
-        👨🏻‍💻 Passionate Frontend Developer | React Enthusiast | Open to New
-        Adventures 🚀
+        👨🏻‍💻 I’m an enthusiastic Frontend Developer with a deep passion for React,
+        <br /> eager to explore new practices and develop my skills. I’m on the
+        hunt for <br /> exciting career opportunities that allow me to grow and
+        innovate.
       </Text>
     </div>
   </Wrapper>
