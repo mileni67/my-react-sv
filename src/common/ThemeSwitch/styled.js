@@ -27,7 +27,7 @@ export const Box = styled.span`
   background: ${({ theme }) => theme.colors.themeSwitch.background};
   border: 1px solid;
   padding: 3px;
-  border-radius: 12px;
+  border-radius: 15px;  
   width: 48px;
   height: 26px;
   display: flex;
@@ -40,25 +40,25 @@ export const IconWrapper = styled(({ moveToRight, ...rest }) => (
 ))`
   background-color: currentColor;
   border-radius: 50%;
-  padding: 4px;
+  padding: 2px;
   display: flex;
-  transition: transform 0.6s ease, left 0.6ease;
+  transition: transform 0.6s ease, left 0.6s ease;
   position: absolute;
   top: 50%;
-  left: 0;
+  left: 3px;
   transform: translateY(-50%);
 
   ${({ moveToRight }) =>
     moveToRight &&
     css`
-      left: calc(100% - 24px);
+      left: calc(100% - 26px);
       transform: translateY(-50%) rotate(180deg);
     `}
 `;
 
 export const Icon = styled(SunIcon)`
-  color: ${({ theme }) => theme.colors.themeSwitch.Icon};
-  width: 18px;
-  height: 18px;
-  transition: transform 0.6e ease;
+  color: ${({ theme }) => theme.colors.themeSwitch.icon};
+  width: 20px;
+  height: 20px;
+  transition: transform 0.6s ease;
 `;
