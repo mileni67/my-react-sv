@@ -8,25 +8,48 @@ export const List = styled.ul`
   list-style: none;
   padding: 0;
   grid-gap: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.tableVerticalMax}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 24px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
 `;
 
 export const Tile = styled.li`
   padding: 56px;
-  background-color: ${({ theme }) => theme.colors.boxBackround};
+  background-color: ${({ theme }) => theme.colors.boxBackground};
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
   transition: border-color 0.3s;
   box-shadow: ${({ theme }) => theme.colors.boxShadow};
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    padding: 20px;
+  }
 `;
 
 export const Name = styled.h3`
   font-size: 24px;
   color: ${({ theme }) => theme.colors.tile.header};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    font-size: 16px;
+  }
 `;
 
 export const Description = styled.p`
   line-height: 1.4;
   margin-top: 24px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    margin-top: 16px;
+    font-size: 14px;
+  }
 `;
 
 export const Links = styled.dl`
@@ -34,6 +57,11 @@ export const Links = styled.dl`
   margin-top: 24px;
   margin-bottom: 0;
   line-height: 1.6;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    font-size: 14px;
+    margin-top: 16px;
+  }
 `;
 
 export const LinksRow = styled.div`

@@ -8,8 +8,8 @@ export const ErrorBox = () => (
     <WarningIcon />
     <Header>Ooops! Something went&nbsp;wrong... </Header>
     <Paragraph>
-      Sorry, failed to load Github&nbsp;projects. You can check them
-      directly&nbsp;on&nbsp;Github.
+      Sorry, failed to load Github&nbsp;projects.
+      <br /> You can check them directly&nbsp;on&nbsp;Github.
     </Paragraph>
     <ButtonLink href={`https:/github.com${githubUserName}`} target="_blank">
       Go to Github

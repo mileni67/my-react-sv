@@ -8,7 +8,11 @@ export const colorNames = {
   frostedGray: "#D1D5DA4D",
   ironTransparent: "rgba(209, 213, 218, 0.3)",
   anakiwa: "#8CC2FF",
-  hazyGray: "#414141",
+  hazyGray: "#F2F3F4",
+  slateGray: "#6E7E91",
+  semiDark: "#4B4B4B",
+  lightGrey: "#D3D3D3",
+  semiGrey: "rgba(209, 213, 218, 0.1)",
 };
 
 const common = {
@@ -30,6 +34,7 @@ export const themeLight = {
 
     site: {
       background: colorNames.Moonlight,
+      text: colorNames.slateGray,
     },
     buttonLink: {
       text: colorNames.white,
@@ -45,19 +50,35 @@ export const themeLight = {
       border: colorNames.hazyGray,
       header: colorNames.ultramarineBlue,
     },
+    headerPrefix: colorNames.slateGray,
+    headerLine: colorNames.frostedGray,
   },
 };
 
 export const themeDark = {
   ...common,
   colors: {
+    primary: colorNames.ultramarineBlue,
+    textPrimary: colorNames.white,
     site: {
       background: colorNames.mineShaft,
       text: colorNames.white,
+    },
+    buttonLink: {
+      text: colorNames.white,
+      border: colorNames.semiGrey,
+      shadow: colorNames.anakiwa,
     },
     themeSwitch: {
       background: colorNames.doveGray,
       icon: colorNames.mineShaft,
     },
+    boxBackground: colorNames.semiDark,
+    tile: {
+      border: colorNames.semiGrey,
+      header: colorNames.white,
+    },
+    headerPrefix: colorNames.white,
+    headerLine: colorNames.lightGrey,
   },
 };
