@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import { ReactComponent as SunIcon } from '../sun.svg';
+import { ReactComponent as SunIcon } from "../sun.svg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -21,13 +21,17 @@ export const Text = styled.span`
   text-transform: uppercase;
   font-weight: bold;
   margin: 12px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+    display: none;
+  }
 `;
 
 export const Box = styled.span`
   background: ${({ theme }) => theme.colors.themeSwitch.background};
   border: 1px solid;
   padding: 3px;
-  border-radius: 15px;  
+  border-radius: 15px;
   width: 48px;
   height: 26px;
   display: flex;

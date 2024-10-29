@@ -16,5 +16,9 @@ body {
     letter-spacing: 0.05em;
     word-break: break-word;
     padding-bottom: 108px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+            padding-bottom: 32px;
+        }
 }
 `;
