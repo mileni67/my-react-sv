@@ -16,16 +16,15 @@ export const MainInforamation = () => (
     <div>
       <ThisIs>This is</ThisIs>
       <Name>Oleksandr Vykhor</Name>
+      <Text>
+        👨🏻‍💻 I’m an enthusiastic Frontend Developer with a deep passion for React,
+        eager to explore new practices and develop my skills. I’m on the hunt
+        for exciting career opportunities that allow me to grow and innovate.
+      </Text>
       <StyledButtonLink href={`mailto:${email}`} title={email}>
         <ButtonIcon />
         Hire me
       </StyledButtonLink>
-      <Text>
-        👨🏻‍💻 I’m an enthusiastic Frontend Developer with a deep passion for React,
-        <br /> eager to explore new practices and develop my skills. I’m on the
-        hunt for <br /> exciting career opportunities that allow me to grow and
-        innovate.
-      </Text>
     </div>
   </Wrapper>
 );
