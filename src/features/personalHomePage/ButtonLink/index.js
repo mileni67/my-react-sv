@@ -10,4 +10,8 @@ export const ButtonLink = styled.a`
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
   background: ${({ theme }) => theme.colors.primary};
   transition: box-shadow 0.3s;
+
+  &:hover {
+    background: ${({ theme }) => theme.colors.buttonLink.hoverBackground};
+  }
 `;

@@ -13,6 +13,7 @@ export const colorNames = {
   semiDark: "#4B4B4B",
   lightGrey: "#D3D3D3",
   semiGrey: "rgba(209, 213, 218, 0.1)",
+  skyBlue: "rgba(33, 136, 255, 1)",
 };
 
 const common = {
@@ -40,6 +41,7 @@ export const themeLight = {
       text: colorNames.white,
       border: colorNames.ironTransparent,
       shadow: colorNames.anakiwa,
+      hoverBackground: "rgba(3, 102, 214, 0.8)",
     },
     themeSwitch: {
       background: colorNames.mercury,
@@ -58,7 +60,7 @@ export const themeLight = {
 export const themeDark = {
   ...common,
   colors: {
-    primary: colorNames.ultramarineBlue,
+    primary: colorNames.skyBlue,
     textPrimary: colorNames.white,
     site: {
       background: colorNames.mineShaft,
@@ -68,6 +70,7 @@ export const themeDark = {
       text: colorNames.white,
       border: colorNames.semiGrey,
       shadow: colorNames.anakiwa,
+      hoverBackground: "rgba(3, 102, 214, 0.8)",
     },
     themeSwitch: {
       background: colorNames.doveGray,
