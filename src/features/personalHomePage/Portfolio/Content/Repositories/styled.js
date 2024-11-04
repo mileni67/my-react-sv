@@ -9,7 +9,7 @@ export const List = styled.ul`
   padding: 0;
   grid-gap: 24px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tableVerticalMax}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tableVertical}px) {
     grid-template-columns: 1fr;
     grid-gap: 24px;
   }
@@ -27,6 +27,10 @@ export const Tile = styled.li`
   transition: border-color 0.3s;
   box-shadow: ${({ theme }) => theme.colors.boxShadow};
   border-radius: ${({ theme }) => theme.borderRadiusSmall};
+
+  &:hover {
+    border: 6px solid ${({ theme }) => theme.hover.box};
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
     padding: 20px;
@@ -75,6 +79,12 @@ export const LinksValue = styled.dd`
 
 export const Link = styled.a`
   color: ${({ theme }) => theme.colors.primary};
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
+
+  &:hover {
+    color: ${({ theme }) => theme.hover.link};
+    text-decoration: underline;
+    border-bottom: 1px solid ${({ theme }) => α(theme.hover.link, 0.7)};
+  }
 `;

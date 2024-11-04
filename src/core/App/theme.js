@@ -55,6 +55,10 @@ export const themeLight = {
     headerPrefix: colorNames.slateGray,
     headerLine: colorNames.frostedGray,
   },
+  hover: {
+    box: "rgba(3, 102, 214, 0.2)",
+    link: "rgba(3, 102, 214, 0.8)",
+  },
 };
 
 export const themeDark = {
@@ -84,4 +88,8 @@ export const themeDark = {
     headerPrefix: colorNames.white,
     headerLine: colorNames.lightGrey,
   },
-};
+  hover: {
+    box: "rgba(3, 102, 214, 0.5)",
+    link: "rgba(33, 136, 255, 0.8)",
+  },
+};  
