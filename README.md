@@ -19,7 +19,7 @@ This is a personal portfolio website designed to showcase information about me, 
 - ![Vercel](https://img.shields.io/badge/vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ### Live Preview
-A live preview of this project is available here: [My CV Website](https://github.com/mileni67) <!-- You can replace this link with your live site link. -->
+A live preview of this project is available here: [My CV Website]([https://github.com/mileni67](https://my-react-sv.vercel.app))
 
 ### Author
 - **GitHub**: [mileni67](https://github.com/mileni67)
